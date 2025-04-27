@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Login and Sign-Up Form" />
+    <meta name="author" content="Mohamed Emad" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap" />
+    <link rel="icon" href="./images/loginIcon.jpg" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Document</title>
+    <!-- BootStrap File -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="row" class="row">
+        <div
+          class="col-10 col-md-6 col-lg-5 mx-auto d-flex flex-column align-items-center justify-content-center h-100d "
+        >
+          <div class="card shadow-sm w-100 glass">
+            <div id="card-body" class="card-body text-white">
+              <div class="text-center mb-3">
+                <i class="fa-solid fa-user fa-3x"></i>
+              </div>
+              <h5 id="login" class="card-title text-center mb-4">Login</h5>
+              <h5 id="signUp" class="card-title text-center mb-4 d-none">
+                Sign-Up
+              </h5>
+              <form>
+                <div id="user-field" class="mb-3 d-none">
+                  <label for="username" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <p id="notFound-msg" class="text-center text-danger d-none">
+                  please enter correct email and password!!
+                </p>
+                <div
+                  id="login-field"
+                  class="mt-4 text-center d-flex flex-column justify-content-center align-items-center"
+                >
+                  <button id="login-btn" class="btn btn-primary mb-3">
+                    Login
+                  </button>
+                  <p class="">
+                    Don't have an account ?
+                    <a
+                      id="register-btn"
+                      class="text-white text-decoration-none"
+                    >
+                      Sign-Up</a
+                    >
+                  </p>
+                </div>
+                <p id="exist-msg" class="text-center text-danger d-none">
+                  account is already exist!!
+                </p>
+                <p id="empty-msg" class="text-center text-danger d-none">
+                  please fill all the fields!!
+                </p>
+                <div id="signBtn" class="mt-4 text-center d-none">
+                  <button id="create-btn" class="btn btn-primary">
+                    Create Account
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div id="content" class="text-white text-center"></div>
+          </div>
+        </div>
+        <div id="footer" class="text-center text-white ">
+          <p >Copyright &copy; 2025 Mohamed Emad Dawood</p>
+          <p>All rights reserved</p>
+      </div>
+      </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
