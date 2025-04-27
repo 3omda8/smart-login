@@ -19,16 +19,16 @@ let usersList;
 
 disableHiddenRequiredInputs();
 
+if (localStorage.getItem("loggedInUser")) {
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  showLoggedInView(loggedInUser);
+}
+
 if (localStorage.getItem("usersList") == null) {
   usersList = [];
 } else {
   usersList = JSON.parse(localStorage.getItem("usersList"));
   console.log(usersList);
-}
-
-if (localStorage.getItem("loggedInUser")) {
-  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
-  showLoggedInView(loggedInUser);
 }
 
 createBtn.addEventListener("click", (e) => {
